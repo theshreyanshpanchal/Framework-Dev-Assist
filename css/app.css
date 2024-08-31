@@ -1,0 +1,513 @@
+body, html {
+    
+    margin: 0;
+    
+    padding: 0;
+    
+    height: 100%;
+    
+    width: 100%;
+
+}
+
+.popup-container {
+
+    width: 400px;
+
+    padding: 16px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: flex-start;
+
+    color: white;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    position: relative;
+
+}
+
+.header {
+
+    display: flex;
+
+    width: 100%;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 8px;
+
+    border-radius: 4px;
+
+    margin-bottom: 15px;
+
+}
+
+.header-icons {
+
+    display: flex;
+
+    gap: 4px;
+
+}
+
+h1 {
+
+    margin: 0;
+
+    font-size: 18px;
+
+}
+
+.icon-btn {
+
+    background-color: transparent;
+
+    color: white;
+
+    border: none;
+
+    padding: 4px 8px;
+
+    cursor: pointer;
+
+    font-size: 20px;
+
+}
+
+.icon-btn img {
+
+    width: 16px;
+
+    height: 16px;
+
+}
+
+.search-container {
+
+    width: 95%;
+
+    margin-bottom: 16px;
+
+    margin-right: 16px;
+
+    display: none;
+
+}
+
+#search-input {
+
+    width: 100%;
+
+    padding: 8px;
+
+    border-radius: 4px;
+
+}
+
+.tabs {
+
+    display: flex;
+
+    width: 100%;
+
+    margin-bottom: 16px;
+
+    overflow-x: auto;
+
+}
+
+.tabs::-webkit-scrollbar {
+
+    display: none;
+
+}
+
+.tab {
+
+    flex: 1;
+
+    padding: 8px;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    border-radius: 8px;
+
+    margin: 0 4px;
+
+    white-space: nowrap;
+
+}
+
+.tab img {
+
+    width: 20px;
+
+    height: 20px;
+
+    margin-right: 8px;
+
+}
+
+.tab.active {
+
+    background-color: rgba(0, 0, 0, 0.6);
+
+}
+
+.tab-content {
+
+    width: 100%;
+
+}
+
+#command-list {
+
+    list-style: none;
+
+    padding: 0;
+
+}
+
+.command-item {
+
+    margin: 8px 0;
+
+    padding: 8px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+
+    border-radius: 4px;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+}
+
+.command-name {
+
+    font-family: 'Courier New', Courier, monospace;
+
+    padding: 8px;
+
+    border-radius: 4px;
+
+    margin-bottom: 8px;
+
+    position: relative;
+
+}
+
+.copy-btn {
+
+    position: absolute;
+
+    top: 3px;
+
+    right: 3px;
+
+    background-color: rgba(0, 0, 0, 0.6);
+
+    color: white;
+
+    border: none;
+
+    padding: 4px 8px;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+.copy-btn img {
+
+    width: 16px;
+
+    height: 16px;
+
+    margin-left: 4px;
+
+}
+
+.copy-btn:hover {
+
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
+
+.command-description {
+
+    margin-bottom: 8px;
+
+    line-height: 17px;
+
+}
+
+.command-options {
+
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+
+    display: none;
+
+}
+
+.toggle-btn {
+
+    background-color: rgba(0, 0, 0, 0.6);
+
+    color: white;
+
+    border: none;
+
+    padding: 8px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    margin-bottom: 10px;
+
+    width: 100%;
+
+    text-align: left;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+.toggle-btn img {
+
+    width: 16px;
+
+    height: 16px;
+
+}
+
+.toggle-btn:hover {
+
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
+
+.command-options::-webkit-scrollbar {
+
+    width: 8px;
+
+}
+
+.command-options::-webkit-scrollbar-thumb {
+
+    background-color: rgba(255, 255, 255, 0.5);
+
+    border-radius: 4px;
+
+}
+
+.command-options::-webkit-scrollbar-track {
+
+    background-color: rgba(0, 0, 0, 0.3);
+
+    border-radius: 4px;
+
+}
+
+.sub-tabs {
+    
+    display: flex;
+    
+    width: 100%;
+    
+    margin-bottom: 16px;
+
+    overflow-x: auto;
+
+}
+
+.sub-tabs::-webkit-scrollbar {
+
+    display: none;
+
+}
+
+.sub-tab {
+
+    flex: 1;
+
+    padding: 8px;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    border-radius: 8px;
+
+    margin: 0 4px;
+
+    white-space: nowrap;
+
+}
+
+.sub-tab img {
+
+    padding-right: 6px;
+
+    width: 16px;
+
+    height: 16px;
+
+}
+
+.sub-tab.active {
+
+    background-color: rgba(0, 0, 0, 0.6);
+
+}
+
+@media (prefers-color-scheme: dark) {
+
+    .popup-container {
+
+        background: rgba(0, 0, 0, 0.8);
+
+        color: white;
+
+    }
+
+    .command-name {
+
+        background: rgba(0, 0, 0, 0.8);
+
+        color: lime;
+
+    }
+
+    .tab.active {
+
+        background-color: rgba(255, 255, 255, 0.1);
+
+    }
+
+    .tab {
+
+        color: white;
+
+    }
+
+    .command-item {
+
+        background-color: rgba(255, 255, 255, 0.1);
+
+        border: 1px solid rgba(255, 255, 255, 0.2);
+
+    }
+
+    .inactive-tab {
+
+        color: rgba(255, 255, 255, 0.3);
+
+        cursor: not-allowed;
+
+    }
+
+    .sub-tab.active {
+    
+        background-color: rgba(255, 255, 255, 0.1);
+    
+    }
+
+}
+
+@media (prefers-color-scheme: light) {
+
+    .popup-container {
+
+        background: rgba(255, 255, 255, 0.8);
+
+        color: black;
+
+    }
+
+    .command-name {
+
+        background: rgba(255, 255, 255, 0.8);
+
+        color: navy;
+
+    }
+
+    .tab.active {
+
+        background-color: rgba(0, 0, 0, 0.1);
+
+    }
+
+    .tab {
+
+        color: black;
+
+    }
+
+    .command-item {
+
+        background-color: rgba(0, 0, 0, 0.1);
+
+        border: 1px solid rgba(0, 0, 0, 0.2);
+
+    }
+
+    .inactive-tab {
+
+        color: rgba(0, 0, 0, 0.3);
+
+        cursor: not-allowed;
+
+    }
+
+    .sub-tab.active {
+    
+        background-color: rgba(0, 0, 0, 0.1);
+    
+    }
+
+}

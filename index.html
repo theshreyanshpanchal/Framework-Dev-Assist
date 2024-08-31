@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrome Extension Popup</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+    <div class="popup-container">
+        <div class="header">
+            <h1>Framework Dev Assist</h1>
+            <div class="header-icons">
+                <a href="" id="star-btn" class="icon-btn">
+                    <img src="icons/system/star.png" alt="Star">
+                </a>
+                <button id="reset-btn" class="icon-btn">
+                    <img src="icons/system/reset.png" alt="Reset">
+                </button>
+                <button id="search-btn" class="icon-btn">
+                    <img src="icons/system/search.png" alt="Search">
+                </button>
+                <button id="close-btn" class="icon-btn">
+                    <img src="icons/system/close.png" alt="Close">
+                </button>
+            </div>
+        </div>
+        <div class="search-container" id="search-container">
+            <input type="text" id="search-input" placeholder="Search...">
+        </div>
+        <div class="tabs">
+            <div class="tab active" id="laravel-tab">
+                <img src="icons/frameworks/laravel.png" alt="Laravel"> Laravel
+            </div>
+            <div class="tab inactive-tab">
+                <img src="icons/frameworks/nestjs.png" alt="Nest JS"> Nest JS
+            </div>
+            <div class="tab inactive-tab">
+                <img src="icons/frameworks/nextjs.png" alt="Next JS"> Next JS        
+            </div>        
+            <div class="tab inactive-tab">
+                <img src="icons/frameworks/nuxtjs.png" alt="Nuxt JS"> Nuxt JS
+            </div>
+        </div>
+        <div class="sub-tabs" id="sub-tabs">
+            <div class="sub-tab active" data-type="commands">
+                <img src="icons/system/command.png" alt="Commands"> Commands
+            </div>
+            <div class="sub-tab" data-type="methods">
+                <img src="icons/system/method.png" alt="Commands"> Collection Methods
+            </div>
+            <div class="sub-tab inactive-tab" data-type="coming-soon">
+                <img src="icons/system/question.png" alt="Question"> Coming Soon
+            </div>
+            <div class="sub-tab inactive-tab" data-type="coming-soon">
+                <img src="icons/system/question.png" alt="Question"> Coming Soon
+            </div>
+        </div>
+        <div class="tab-content" id="laravel-content">
+            <div class="commands-section">
+                <ul id="command-list">
+                    <!-- Commands/Methods will be inserted here -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

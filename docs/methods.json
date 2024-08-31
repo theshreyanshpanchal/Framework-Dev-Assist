@@ -1,0 +1,722 @@
+[
+    {
+        "name": "range()",
+        "description": "Create a collection with the given range."
+    },
+    {
+        "name": "all()",
+        "description": "Get all of the items in the collection."
+    },
+    {
+        "name": "lazy()",
+        "description": "Get a lazy collection for the items in this collection."
+    },
+    {
+        "name": "median()",
+        "description": "Get the median of a given key."
+    },
+    {
+        "name": "mode()",
+        "description": "Get the mode of a given key."
+    },
+    {
+        "name": "collapse()",
+        "description": "Collapse the collection of items into a single array."
+    },
+    {
+        "name": "contains()",
+        "description": "Determine if an item exists in the collection."
+    },
+    {
+        "name": "containsStrict()",
+        "description": "Determine if an item exists, using strict comparison."
+    },
+    {
+        "name": "doesntContain()",
+        "description": "Determine if an item is not contained in the collection."
+    },
+    {
+        "name": "crossJoin()",
+        "description": "Cross join with the given lists, returning all possible permutations."
+    },
+    {
+        "name": "diff()",
+        "description": "Get the items in the collection that are not present in the given items."
+    },
+    {
+        "name": "diffUsing()",
+        "description": "Get the items in the collection that are not present in the given items, using the callback."
+    },
+    {
+        "name": "diffAssoc()",
+        "description": "Get the items in the collection whose keys and values are not present in the given items."
+    },
+    {
+        "name": "diffAssocUsing()",
+        "description": "Get the items in the collection whose keys and values are not present in the given items, using the callback."
+    },
+    {
+        "name": "diffKeys()",
+        "description": "Get the items in the collection whose keys are not present in the given items."
+    },
+    {
+        "name": "diffKeysUsing()",
+        "description": "Get the items in the collection whose keys are not present in the given items, using the callback."
+    },
+    {
+        "name": "duplicates()",
+        "description": "Retrieve duplicate items from the collection."
+    },
+    {
+        "name": "duplicatesStrict()",
+        "description": "Retrieve duplicate items from the collection using strict comparison."
+    },
+    {
+        "name": "duplicateComparator()",
+        "description": "Get the comparison function to detect duplicates."
+    },
+    {
+        "name": "except()",
+        "description": "Get all items except for those with the specified keys."
+    },
+    {
+        "name": "filter()",
+        "description": "Run a filter over each of the items."
+    },
+    {
+        "name": "first()",
+        "description": "Get the first item from the collection passing the given truth test."
+    },
+    {
+        "name": "flatten()",
+        "description": "Get a flattened array of the items in the collection."
+    },
+    {
+        "name": "flip()",
+        "description": "Flip the items in the collection."
+    },
+    {
+        "name": "forget()",
+        "description": "Remove an item from the collection by key. \\Illuminate\\Contracts\\Support\\Arrayable<array-key, TValue>|iterable<array-key, TKey>|TKey  $keys"
+    },
+    {
+        "name": "get()",
+        "description": "Get an item from the collection by key."
+    },
+    {
+        "name": "getOrPut()",
+        "description": "Get an item from the collection by key or add it to collection if it does not exist."
+    },
+    {
+        "name": "groupBy()",
+        "description": "Group an associative array by a field or using a callback."
+    },
+    {
+        "name": "keyBy()",
+        "description": "Key an associative array by a field or using a callback."
+    },
+    {
+        "name": "has()",
+        "description": "Determine if an item exists in the collection by key."
+    },
+    {
+        "name": "hasAny()",
+        "description": "Determine if any of the keys exist in the collection."
+    },
+    {
+        "name": "implode()",
+        "description": "Concatenate values of a given key as a string."
+    },
+    {
+        "name": "intersect()",
+        "description": "Intersect the collection with the given items."
+    },
+    {
+        "name": "intersectUsing()",
+        "description": "Intersect the collection with the given items, using the callback."
+    },
+    {
+        "name": "intersectAssoc()",
+        "description": "Intersect the collection with the given items with additional index check."
+    },
+    {
+        "name": "intersectAssocUsing()",
+        "description": "Intersect the collection with the given items with additional index check, using the callback."
+    },
+    {
+        "name": "intersectByKeys()",
+        "description": "Intersect the collection with the given items by key."
+    },
+    {
+        "name": "isEmpty()",
+        "description": "Determine if the collection is empty or not."
+    },
+    {
+        "name": "containsOneItem()",
+        "description": "Determine if the collection contains a single item."
+    },
+    {
+        "name": "join()",
+        "description": "Join all items from the collection using a string. The final items can use a separate glue string."
+    },
+    {
+        "name": "keys()",
+        "description": "Get the keys of the collection items."
+    },
+    {
+        "name": "last()",
+        "description": "Get the last item from the collection."
+    },
+    {
+        "name": "pluck()",
+        "description": "Get the values of a given key."
+    },
+    {
+        "name": "map()",
+        "description": "Run a map over each of the items."
+    },
+    {
+        "name": "mapToDictionary()",
+        "description": "Run a dictionary map over the items. The callback should return an associative array with a single key\/value pair."
+    },
+    {
+        "name": "mapWithKeys()",
+        "description": "Run an associative map over each of the items. The callback should return an associative array with a single key\/value pair."
+    },
+    {
+        "name": "merge()",
+        "description": "Merge the collection with the given items."
+    },
+    {
+        "name": "mergeRecursive()",
+        "description": "Recursively merge the collection with the given items."
+    },
+    {
+        "name": "multiply()",
+        "description": "Multiply the items in the collection by the multiplier."
+    },
+    {
+        "name": "combine()",
+        "description": "Create a collection by using this collection for keys and another for its values."
+    },
+    {
+        "name": "union()",
+        "description": "Union the collection with the given items."
+    },
+    {
+        "name": "nth()",
+        "description": "Create a new collection consisting of every n-th element."
+    },
+    {
+        "name": "only()",
+        "description": "Get the items with the specified keys."
+    },
+    {
+        "name": "select()",
+        "description": "Select specific values from the items within the collection."
+    },
+    {
+        "name": "pop()",
+        "description": "Get and remove the last N items from the collection."
+    },
+    {
+        "name": "prepend()",
+        "description": "Push an item onto the beginning of the collection."
+    },
+    {
+        "name": "push()",
+        "description": "Push one or more items onto the end of the collection."
+    },
+    {
+        "name": "unshift()",
+        "description": "Prepend one or more items to the beginning of the collection."
+    },
+    {
+        "name": "concat()",
+        "description": "Push all of the given items onto the collection."
+    },
+    {
+        "name": "pull()",
+        "description": "Get and remove an item from the collection."
+    },
+    {
+        "name": "put()",
+        "description": "Put an item in the collection by key."
+    },
+    {
+        "name": "random()",
+        "description": "Get one or a specified number of items randomly from the collection."
+    },
+    {
+        "name": "replace()",
+        "description": "Replace the collection items with the given items."
+    },
+    {
+        "name": "replaceRecursive()",
+        "description": "Recursively replace the collection items with the given items."
+    },
+    {
+        "name": "reverse()",
+        "description": "Reverse items order."
+    },
+    {
+        "name": "search()",
+        "description": "Search the collection for a given value and return the corresponding key if successful."
+    },
+    {
+        "name": "before()",
+        "description": "Get the item before the given item."
+    },
+    {
+        "name": "after()",
+        "description": "Get the item after the given item."
+    },
+    {
+        "name": "shift()",
+        "description": "Get and remove the first N items from the collection."
+    },
+    {
+        "name": "shuffle()",
+        "description": "Shuffle the items in the collection."
+    },
+    {
+        "name": "sliding()",
+        "description": "Create chunks representing a \"sliding window\" view of the items in the collection."
+    },
+    {
+        "name": "skip()",
+        "description": "Skip the first {$count} items."
+    },
+    {
+        "name": "skipUntil()",
+        "description": "Skip items in the collection until the given condition is met."
+    },
+    {
+        "name": "skipWhile()",
+        "description": "Skip items in the collection while the given condition is met."
+    },
+    {
+        "name": "slice()",
+        "description": "Slice the underlying collection array."
+    },
+    {
+        "name": "split()",
+        "description": "Split a collection into a certain number of groups."
+    },
+    {
+        "name": "splitIn()",
+        "description": "Split a collection into a certain number of groups, and fill the first groups completely."
+    },
+    {
+        "name": "sole()",
+        "description": "Get the first item in the collection, but only if exactly one item exists. Otherwise, throw an exception."
+    },
+    {
+        "name": "firstOrFail()",
+        "description": "Get the first item in the collection but throw an exception if no matching items exist."
+    },
+    {
+        "name": "chunk()",
+        "description": "Chunk the collection into chunks of the given size."
+    },
+    {
+        "name": "chunkWhile()",
+        "description": "Chunk the collection into chunks with a callback."
+    },
+    {
+        "name": "sort()",
+        "description": "Sort through each item with a callback."
+    },
+    {
+        "name": "sortDesc()",
+        "description": "Sort items in descending order."
+    },
+    {
+        "name": "sortBy()",
+        "description": "Sort the collection using the given callback."
+    },
+    {
+        "name": "sortByMany()",
+        "description": "Sort the collection using multiple comparisons."
+    },
+    {
+        "name": "sortByDesc()",
+        "description": "Sort the collection in descending order using the given callback."
+    },
+    {
+        "name": "sortKeys()",
+        "description": "Sort the collection keys."
+    },
+    {
+        "name": "sortKeysDesc()",
+        "description": "Sort the collection keys in descending order."
+    },
+    {
+        "name": "sortKeysUsing()",
+        "description": "Sort the collection keys using a callback."
+    },
+    {
+        "name": "splice()",
+        "description": "Splice a portion of the underlying collection array."
+    },
+    {
+        "name": "take()",
+        "description": "Take the first or last {$limit} items."
+    },
+    {
+        "name": "takeUntil()",
+        "description": "Take items in the collection until the given condition is met."
+    },
+    {
+        "name": "takeWhile()",
+        "description": "Take items in the collection while the given condition is met."
+    },
+    {
+        "name": "transform()",
+        "description": "Transform each item in the collection using a callback."
+    },
+    {
+        "name": "dot()",
+        "description": "Flatten a multi-dimensional associative array with dots."
+    },
+    {
+        "name": "undot()",
+        "description": "Convert a flatten \"dot\" notation array into an expanded array."
+    },
+    {
+        "name": "unique()",
+        "description": "Return only unique items from the collection array."
+    },
+    {
+        "name": "values()",
+        "description": "Reset the keys on the underlying array."
+    },
+    {
+        "name": "zip()",
+        "description": "Zip the collection together with one or more arrays. e.g. new Collection([1, 2, 3])->zip([4, 5, 6]); => [[1, 4], [2, 5], [3, 6]]"
+    },
+    {
+        "name": "pad()",
+        "description": "Pad collection to the specified length with a value."
+    },
+    {
+        "name": "getIterator()",
+        "description": "Get an iterator for the items."
+    },
+    {
+        "name": "count()",
+        "description": "Count the number of items in the collection."
+    },
+    {
+        "name": "countBy()",
+        "description": "Count the number of items in the collection by a field or using a callback."
+    },
+    {
+        "name": "add()",
+        "description": "Add an item to the collection."
+    },
+    {
+        "name": "toBase()",
+        "description": "Get a base Support collection instance from this collection."
+    },
+    {
+        "name": "offsetExists()",
+        "description": "Determine if an item exists at an offset."
+    },
+    {
+        "name": "offsetGet()",
+        "description": "Get an item at a given offset."
+    },
+    {
+        "name": "offsetSet()",
+        "description": "Set the item at a given offset."
+    },
+    {
+        "name": "offsetUnset()",
+        "description": "Unset the item at a given offset."
+    },
+    {
+        "name": "make()",
+        "description": "Create a new collection instance if the value isn't one already."
+    },
+    {
+        "name": "wrap()",
+        "description": "Wrap the given value in a collection if applicable."
+    },
+    {
+        "name": "unwrap()",
+        "description": "Get the underlying items from the given collection if applicable."
+    },
+    {
+        "name": "empty()",
+        "description": "Create a new instance with no items."
+    },
+    {
+        "name": "times()",
+        "description": "Create a new collection by invoking the callback a given amount of times."
+    },
+    {
+        "name": "avg()",
+        "description": "Get the average value of a given key."
+    },
+    {
+        "name": "average()",
+        "description": "Alias for the \"avg\" method."
+    },
+    {
+        "name": "some()",
+        "description": "Alias for the \"contains\" method."
+    },
+    {
+        "name": "dd()",
+        "description": "Dump the given arguments and terminate execution."
+    },
+    {
+        "name": "dump()",
+        "description": "Dump the items."
+    },
+    {
+        "name": "each()",
+        "description": "Execute a callback over each item."
+    },
+    {
+        "name": "eachSpread()",
+        "description": "Execute a callback over each nested chunk of items."
+    },
+    {
+        "name": "every()",
+        "description": "Determine if all items pass the given truth test."
+    },
+    {
+        "name": "firstWhere()",
+        "description": "Get the first item by the given key value pair."
+    },
+    {
+        "name": "value()",
+        "description": "Get a single key's value from the first matching item in the collection."
+    },
+    {
+        "name": "ensure()",
+        "description": "Ensure that every item in the collection is of the expected type."
+    },
+    {
+        "name": "isNotEmpty()",
+        "description": "Determine if the collection is not empty."
+    },
+    {
+        "name": "mapSpread()",
+        "description": "Run a map over each nested chunk of items."
+    },
+    {
+        "name": "mapToGroups()",
+        "description": "Run a grouping map over the items. The callback should return an associative array with a single key\/value pair."
+    },
+    {
+        "name": "flatMap()",
+        "description": "Map a collection and flatten the result by a single level."
+    },
+    {
+        "name": "mapInto()",
+        "description": "Map the values into a new class."
+    },
+    {
+        "name": "min()",
+        "description": "Get the min value of a given key."
+    },
+    {
+        "name": "max()",
+        "description": "Get the max value of a given key."
+    },
+    {
+        "name": "forPage()",
+        "description": "\"Paginate\" the collection by slicing it into a smaller collection."
+    },
+    {
+        "name": "partition()",
+        "description": "Partition the collection into two arrays using the given callback or key."
+    },
+    {
+        "name": "percentage()",
+        "description": "Calculate the percentage of items that pass a given truth test."
+    },
+    {
+        "name": "sum()",
+        "description": "Get the sum of the given values."
+    },
+    {
+        "name": "whenEmpty()",
+        "description": "Apply the callback if the collection is empty."
+    },
+    {
+        "name": "whenNotEmpty()",
+        "description": "Apply the callback if the collection is not empty."
+    },
+    {
+        "name": "unlessEmpty()",
+        "description": "Apply the callback unless the collection is empty."
+    },
+    {
+        "name": "unlessNotEmpty()",
+        "description": "Apply the callback unless the collection is not empty."
+    },
+    {
+        "name": "where()",
+        "description": "Filter items by the given key value pair."
+    },
+    {
+        "name": "whereNull()",
+        "description": "Filter items where the value for the given key is null."
+    },
+    {
+        "name": "whereNotNull()",
+        "description": "Filter items where the value for the given key is not null."
+    },
+    {
+        "name": "whereStrict()",
+        "description": "Filter items by the given key value pair using strict comparison."
+    },
+    {
+        "name": "whereIn()",
+        "description": "Filter items by the given key value pair."
+    },
+    {
+        "name": "whereInStrict()",
+        "description": "Filter items by the given key value pair using strict comparison."
+    },
+    {
+        "name": "whereBetween()",
+        "description": "Filter items such that the value of the given key is between the given values."
+    },
+    {
+        "name": "whereNotBetween()",
+        "description": "Filter items such that the value of the given key is not between the given values."
+    },
+    {
+        "name": "whereNotIn()",
+        "description": "Filter items by the given key value pair."
+    },
+    {
+        "name": "whereNotInStrict()",
+        "description": "Filter items by the given key value pair using strict comparison."
+    },
+    {
+        "name": "whereInstanceOf()",
+        "description": "Filter the items, removing any items that don't match the given type(s)."
+    },
+    {
+        "name": "pipe()",
+        "description": "Pass the collection to the given callback and return the result."
+    },
+    {
+        "name": "pipeInto()",
+        "description": "Pass the collection into a new class."
+    },
+    {
+        "name": "pipeThrough()",
+        "description": "Pass the collection through a series of callable pipes and return the result."
+    },
+    {
+        "name": "reduce()",
+        "description": "Reduce the collection to a single value."
+    },
+    {
+        "name": "reduceSpread()",
+        "description": "Reduce the collection to multiple aggregate values."
+    },
+    {
+        "name": "reduceWithKeys()",
+        "description": "Reduce an associative collection to a single value."
+    },
+    {
+        "name": "reject()",
+        "description": "Create a collection of all elements that do not pass a given truth test."
+    },
+    {
+        "name": "tap()",
+        "description": "Pass the collection to the given callback and then return it."
+    },
+    {
+        "name": "uniqueStrict()",
+        "description": "Return only unique items from the collection array using strict comparison."
+    },
+    {
+        "name": "collect()",
+        "description": "Collect the values into a collection."
+    },
+    {
+        "name": "toArray()",
+        "description": "Get the collection of items as a plain array."
+    },
+    {
+        "name": "jsonSerialize()",
+        "description": "Convert the object into something JSON serializable."
+    },
+    {
+        "name": "toJson()",
+        "description": "Get the collection of items as JSON."
+    },
+    {
+        "name": "getCachingIterator()",
+        "description": "Get a CachingIterator instance."
+    },
+    {
+        "name": "escapeWhenCastingToString()",
+        "description": "Indicate that the model's string representation should be escaped when __toString is invoked."
+    },
+    {
+        "name": "proxy()",
+        "description": "Add a method to the list of proxied methods."
+    },
+    {
+        "name": "getArrayableItems()",
+        "description": "Results array of items from Collection or Arrayable."
+    },
+    {
+        "name": "operatorForWhere()",
+        "description": "Get an operator checker callback."
+    },
+    {
+        "name": "useAsCallable()",
+        "description": "Determine if the given value is callable, but not a string."
+    },
+    {
+        "name": "valueRetriever()",
+        "description": "Get a value retrieving callback."
+    },
+    {
+        "name": "equality()",
+        "description": "Make a function to check an item's equality."
+    },
+    {
+        "name": "negate()",
+        "description": "Make a function using another function, by negating its result."
+    },
+    {
+        "name": "identity()",
+        "description": "Make a function that returns what's passed to it."
+    },
+    {
+        "name": "when()",
+        "description": "Apply the callback if the given \"value\" is (or resolves to) truthy."
+    },
+    {
+        "name": "unless()",
+        "description": "Apply the callback if the given \"value\" is (or resolves to) falsy."
+    },
+    {
+        "name": "macro()",
+        "description": "Register a custom macro."
+    },
+    {
+        "name": "mixin()",
+        "description": "Mix another object into the class."
+    },
+    {
+        "name": "hasMacro()",
+        "description": "Checks if macro is registered."
+    },
+    {
+        "name": "flushMacros()",
+        "description": "Flush the existing macros."
+    }
+]
